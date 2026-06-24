@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ciclismo | Pasión sobre Ruedas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-bicycle"></i> <span>MundoCiclismo</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carreras">Grandes Vueltas</a></li>
+                <li><a href="#ciclistas">Corredores</a></li>
+                <li><a href="#equipos">Equipos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>El Deporte más Exigente del Mundo</h1>
+            <p>Descubre la historia, las leyendas, las rutas míticas y la velocidad del ciclismo de ruta profesional.</p>
+            <a href="#carreras" class="btn-primary">Explorar Carreras</a>
+        </div>
+    </section>
+
+    <section id="carreras" class="section">
+        <h2 class="section-title">Las Grandes Vueltas</h2>
+        <p class="section-subtitle">Las tres competiciones por etapas más prestigiosas e importantes del planeta.</p>
+        
+        <div class="grid-container">
+            <div class="card carrera-card" data-bg="tour">
+                <div class="card-badge amarillo">Tour</div>
+                <h3>Tour de Francia</h3>
+                <p>La carrera más antigua y prestigiosa del mundo. El maillot amarillo corona al rey del ciclismo mundial en los Campos Elíseos.</p>
+                <span class="info-tag">Julio | 21 Etapas</span>
+            </div>
+            <div class="card carrera-card" data-bg="giro">
+                <div class="card-badge rosa">Giro</div>
+                <h3>Giro de Italia</h3>
+                <p>Famoso por sus pasos de montaña brutales en los Alpes y Dolomitas. El ganador viste la mítica Maglia Rosa.</p>
+                <span class="info-tag">Mayo | 21 Etapas</span>
+            </div>
+            <div class="card carrera-card" data-bg="vuelta">
+                <div class="card-badge rojo">Vuelta</div>
+                <h3>Vuelta a España</h3>
+                <p>Conocida por sus finales explosivos y muros de rampas imposibles. El líder viste "La Roja".</p>
+                <span class="info-tag">Agosto/Sept | 21 Etapas</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ciclistas" class="section bg-light">
+        <h2 class="section-title">Los Capos del Pelotón</h2>
+        <p class="section-subtitle">Los ciclistas más potentes y determinantes de la era moderna.</p>
+        
+        <div class="tabs-container">
+            <div class="tabs-buttons">
+                <button class="tab-btn active" data-target="pogacar">Tadej Pogačar</button>
+                <button class="tab-btn" data-target="vingegaard">Jonas Vingegaard</button>
+                <button class="tab-btn" data-target="van-aert">Wout van Aert</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div id="pogacar" class="tab-panel active">
+                    <h3>Tadej Pogačar (Eslovenia)</h3>
+                    <p class="perfil"><strong>Especialidad:</strong> Clasificaciones generales, escalador puro y vueltas de un día (Monumentos).</p>
+                    <p>Un talento generacional indiscutible. Capaz de atacar a 80 km de meta y ganar tanto el Tour de Francia como las clásicas más duras del calendario.</p>
+                </div>
+                <div id="vingegaard" class="tab-panel">
+                    <h3>Jonas Vingegaard (Dinamarca)</h3>
+                    <p class="perfil"><strong>Especialidad:</strong> Escalador de resistencia extrema y vueltas por etapas.</p>
+                    <p>El gran rival contemporáneo. Su capacidad de recuperación en la tercera semana de carrera y su dominio en la alta montaña lo convierten en un titán de los Grandes Vueltas.</p>
+                </div>
+                <div id="van-aert" class="tab-panel">
+                    <h3>Wout van Aert (Bélgica)</h3>
+                    <p class="perfil"><strong>Especialidad:</strong> Ciclocrós, esprint, contrarreloj y clasicómano.</p>
+                    <p>El ciclista total. Es capaz de ganar un esprint masivo en el llano, destrozar el pelotón en la montaña para su equipo y ganar una crono al día siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipos" class="section">
+        <h2 class="section-title">Escuadras Más Interesantes</h2>
+        <p class="section-subtitle">Los equipos del WorldTour que controlan las estrategias y presupuestos del circuito.</p>
+        
+        <div class="grid-container dynamic-grid">
+            <div class="card equipo-card">
+                <div class="equipo-header uae">UAE Team Emirates</div>
+                <div class="card-body">
+                    <p>La superpotencia económica y deportiva actual. Diseñado para dominar cualquier terreno, liderando constantemente el ranking de la UCI.</p>
+                </div>
+            </div>
+            <div class="card equipo-card">
+                <div class="equipo-header visma">Team Visma | Lease a Bike</div>
+                <div class="card-body">
+                    <p>Conocidos por su enfoque científico, nutrición milimétrica y una estrategia táctica que revolucionó la forma de correr el Tour.</p>
+                </div>
+            </div>
+            <div class="card equipo-card">
+                <div class="equipo-header redbull">Red Bull-BORA-hansgrohe</div>
+                <div class="card-body">
+                    <p>Con la entrada del gigante de las bebidas energéticas, este equipo se proyecta como una de las estructuras más innovadoras y potentes a futuro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mundo Ciclismo. Diseñado con pasión para los amantes de las dos ruedas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
